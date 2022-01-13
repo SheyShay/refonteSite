@@ -1,2 +1,2 @@
 # refonteSite
-school project where we need to rebuil an entier web site. (http://www.astrosurf.com/obsrouen/)
+school project where we need to remake an entier web site. (http://www.astrosurf.com/obsrouen/)
