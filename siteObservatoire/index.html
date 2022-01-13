@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>accueil</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  
+  <body>
+    <header>
+        <nav>
+          <div class="navHamburger" onclick="doClickHamburger()">
+                <img class="navDivHamburger" src="https://img.icons8.com/material-outlined/24/FFFFFF/menu--v3.png" alt="Menu" id="hamburger-logo"/>
+          </div>
+          <img id="logoObservatiore" src="images/logoObservatoire.jpg" alt="logo du site de l'observatoire de Rouen">
+          <a class='navBar' href="index.html">
+            <div class="navDiv">
+              <img class="navImage" src="https://img.icons8.com/ios/50/FFFFFF/home--v1.png" alt="logo étoile">
+              <p>ACCUEIL</p>
+            </div>
+          </a>
+            <a class='navBar' href="presentation/presentation.html">
+            <div class="navDiv">
+                <img class="navImage" src="https://img.icons8.com/ios/90/FFFFFF/star--v1.png" alt="logo présentation">
+                <p>PRÉSENTATION</p>
+            </div>
+          </a>
+            <div id="Titre">OBSERVATOIRE ASTRONOMIQUE DE ROUEN</div>
+            <div class="navDiv" id="activite">
+                <img class="navImage" src="https://img.icons8.com/material-outlined/48/FFFFFF/activity-feed.png" alt="logo activite ">
+                <div class="hideActiviteMenu" id="menuActivite">
+                    <p class="titreActivite">ACTIVITÉS</p>
+                    <div class="drop">
+                        <ul>
+                            <li><a class="hideNavBar" href="">Galerie</a></li>
+                            <li><a class="hideNavBar" href="">Agenda</a></li>
+                            <li><a class="hideNavBar" href="">Articles</a></li>
+                            <li><a class="hideNavBar" href="">Ephemerides</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navDiv" id="observatoire+">
+              <img class="navImage" src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/FFFFFF/external-observatory-space-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" alt="logo Observatoire">
+              <div class="hideObservatoireMenu" id="menuObservatoire">
+                  <p class="titreObservatoire">L'OBSERVATOIRE ET VOUS</p>
+                  <div class="drop2">
+                      <ul>
+                          <li><a class="hideNavBar" href="">Questions</a></li>
+                          <li><a class="hideNavBar" href="">À propos</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </nav>
+        <div class="hideHamburgerMenu" id="menuHamburger">
+            <ul>
+                <li><a class='hideNavBar' href="index.html">Accueil</a></li>
+                <li><a class='hideNavBar' href="presentation/presentation.html">Présentation</a></li>
+                <li><a class='hideNavBar' href="">Agenda</a></li>
+                <li><a class='hideNavBar' href="">Articles</a></li>
+                <li><a class='hideNavBar' href="">Ephemerides</a></li>
+                <li><a class='hideNavBar' href="">Questions</a></li>
+                <li><a class='hideNavBar' href="">À propos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!------------------------------------------- MAIN PAGE ---------------------------------------------->
+    <main>
+      <div class="intro">
+        <div class="intro-slideshow">
+          <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/hubble_ngc105_potw2201a_0.jpg">
+          <img src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/pia22093-home2.gif">
+          <img src="https://media.istockphoto.com/vectors/vector-realistic-cosmic-galaxy-background-concept-of-space-nebula-and-vector-id891136202?k=20&m=891136202&s=612x612&w=0&h=0Y9waGRoj1lQelPpDbhQSkkhhzEKaTcF8BNRQt4uN-Y=">
+        </div>
+      </div>
+
+      <h2 id="phrase-acroche">Bienvenue sur le site de l'observatoire astronomique de Rouen</h2>
+<!--------------------------------------------PRESENTATION OBSERVATOIRE----------------------------->
+      <div class="block-main">
+        <div class="presentation-photo-groupe">
+          <p id="paragraphe">Bienvenue sur le site de l'Observatoire Astronomique de Rouen, association animée uniquement par des bénévoles, reconnue d'intérêt général, agréée Jeunesse et Education Populaire et soutenue par la Ville de Rouen. L'observatoire Astronomique de Rouen a été fondé en 1884 à l'initiative de Ludovic Gully, professeur de Mathématiques à Rouen. Dès sa création, des observateurs talentueux comme M. Georges Caron, vice président de l'association qui possédait un observatoire personnel à Lillebonne, fixent sur la pellicule des phénomènes célestes exceptionnels comme le passage de la comète de Halley ou l'éclipse perlée du 17 avril 1912. Il y a une dizaine d'années, l'usage des caméras CCD et des webcam a révolutionné l'imagerie astronomique. Vous verrez sur ce site à la fois des images argentiques et électroniques, mais aussi quelques dessins. Ils ont tous été réalisés par des membres de l'Observatoire, avec les instruments de l'association ou leurs instruments personnels, à Rouen ou à partir d'autres lieux d'observation.</p>
+          <img id="photo-groupe" src="images/ag2020.jpg">
+        </div>
+        <div class="interaction">
+          <div class="meteo">
+            <p>Cliquez sur la carte pour retrouver la météo</p>
+            <a href="https://en.sat24.com/en" target="_blank"><img id="météo-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR2IwQbvs2PXxSg7jV-BFubeEKhO3ZS2cqhA&usqp=CAU"></a>
+            <br>
+            <form action="https://en.sat24.com/en" method="get" target="_blank">
+              <button class="styled" type="submit">Météo</button>
+           </form>
+        </div>
+          <div class="don">
+          <p>Si vous souhaitez faire un don, cliquez sur le bouton ci-dessous</p>
+          <form action="/documentation/demandededons.pdf" method="get" target="_blank">
+            <button class="styled-don" type="submit">Donation</button>
+         </form>
+          </div>
+        </div>
+      </div>
+
+<!----------------------------------------------  CAROUSEL  ------------------------------------------>
+
+    </main>
+  
+        <footer>
+          <div id="adresse">
+              <h4>Impasse Adrien AUZOUT</h4>
+              <h4>Terre-plein de la Fontaine Sainte-Marie</h4>
+              <h4>76000 ROUEN</h4>
+          </div>
+          <div>
+            <img id="map"src="images/plan.jpg" alt="plan de l'emplacement de l'observatoire">
+          </div>
+          <div= id='contacter'>
+            <h2>Nous contacter</h2>
+            <h4>02 35 88 01 96</h4>
+            <h4>obs.rouen@club-internet.fr</h4>
+          </div>
+      </footer>
+  </body>
+</html>
