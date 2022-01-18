@@ -53,7 +53,7 @@
           <p class="titreObservatoire">L'OBSERVATOIRE ET VOUS</p>
           <div class="drop2">
             <ul>
-              <li><a class="hideNavBar" href="questions/questions.html">Questions</a></li>
+              <li><a class="hideNavBar" href="questions/question.html">Questions</a></li>
               <li><a class="hideNavBar" href="propos/propos.html">À propos</a></li>
             </ul>
           </div>
@@ -79,11 +79,14 @@
     <div class="intro">
       <div class="intro-slideshow">
         <img
-          src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/hubble_ngc105_potw2201a_0.jpg" alt="image d'une galaxy">
+          src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/hubble_ngc105_potw2201a_0.jpg"
+          alt="image d'une galaxy">
         <img
-          src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/pia22093-home2.gif" alt="Gif des planetes qui brulent">
+          src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/pia22093-home2.gif"
+          alt="Gif des planetes qui brulent">
         <img
-          src="https://media.istockphoto.com/vectors/vector-realistic-cosmic-galaxy-background-concept-of-space-nebula-and-vector-id891136202?k=20&m=891136202&s=612x612&w=0&h=0Y9waGRoj1lQelPpDbhQSkkhhzEKaTcF8BNRQt4uN-Y=" alt="image de couverture d'une nebuleuse">
+          src="https://media.istockphoto.com/vectors/vector-realistic-cosmic-galaxy-background-concept-of-space-nebula-and-vector-id891136202?k=20&m=891136202&s=612x612&w=0&h=0Y9waGRoj1lQelPpDbhQSkkhhzEKaTcF8BNRQt4uN-Y="
+          alt="image de couverture d'une nebuleuse">
       </div>
     </div>
 
@@ -98,9 +101,7 @@
           de l'association qui possédait un observatoire personnel à Lillebonne, fixent sur la pellicule des phénomènes
           célestes exceptionnels comme le passage de la comète de Halley ou l'éclipse perlée du 17 avril 1912. Il y a
           une dizaine d'années, l'usage des caméras CCD et des webcam a révolutionné l'imagerie astronomique. Vous
-          verrez sur ce site à la fois des images argentiques et électroniques, mais aussi quelques dessins. Ils ont
-          tous été réalisés par des membres de l'Observatoire, avec les instruments de l'association ou leurs
-          instruments personnels, à Rouen ou à partir d'autres lieux d'observation.</p>
+          verrez sur ce site à la fois des images argentiques et électroniques, mais aussi quelques dessins.</p>
         <img id="photo-groupe" src="images/ag2020.jpg" alt="photos assemblé générale de 2020">
       </div>
       <div class="interaction">
@@ -124,43 +125,53 @@
   </main>
 
   <!----------------------------------------------  CAROUSEL  ------------------------------------------>
-  <div id='loto'>
-
-    <div class="slideshow-container fade">
-
-      <a href="documentation/eclipse.pdf" target="_blank">
-        <div class="Containers">
-          <div class="MessageInfo">1 / 3</div>
-          <img class="david" src="images/eclipse.PNG" style="width:100%" alt="article sur les eclipses lunaire">
-          <div class="Info">Ce rendez-vous de la Lune avec le Soleil est un spectacle naturel à ne pas manque,
-            s’il fait beau. Regarder le Soleil demande de respecter les règles de prudence visuelle rappelées au
-            paragraphe III. </div>
-        </div>
-      </a>
-      <a href="documentation/mercure.pdf" target="_blank">
-        <div class="Containers">
-          <div class="MessageInfo">2 / 3</div>
-          <img class="david" src="images/mercure.PNG" style="width:100%" alt="article sur la planete Mercure">
-          <div class="Info">Passage de Mercure devant le Soleil, le lundi 11 novembre 2019</div>
-        </div>
-      </a>
-      <a href="documentation/chronologie.pdf" target="_blank">
-        <div class="Containers">
-          <div class="MessageInfo">3 / 3</div>
-          <img class="david" src="images/chronologie.PNG" style="width:100%" alt="article de chronologie">
-          <div class="Info">La chronologie des concepts</div>
-        </div>
-      </a>
-      <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  <div class="container">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+    <div class="cards">
+      <label class="card" for="item-1" id="song-1">
+        <img src="images/mercure.PNG" alt="article sur mercure">
+      </label>
+      <label class="card" for="item-2" id="song-2">
+        <img src="images/eclipse.PNG" alt="article eclipse">
+      </label>
+      <label class="card" for="item-3" id="song-3">
+        <img src="images/chronologie.PNG" alt="article chronologie">
+      </label>
     </div>
-    <br>
-    <div id="dot">
-      <span class="dots" onclick="currentSlide(1)"></span>
-      <span class="dots" onclick="currentSlide(2)"></span>
-      <span class="dots" onclick="currentSlide(3)"></span>
+    <div class="player">
+      <div class="upper-part">
+        <div class="info-area" id="test">
+          <label class="song-info" id="song-info-1">
+            <a href="articles/articles.html">
+              <div class="title">
+                <p>Passage de Mercure devant le Soleil, le lundi 11 novembre 2019</p>
+              </div>
+            </a>
+          </label>
+          <label class="song-info" id="song-info-2">
+            <a href="articles/articles.html">
+              <div class="title">
+                <p>Ce rendez-vous de la Lune avec le Soleil est un spectacle naturel</p>
+              </div>
+            </a>
+          </label>
+          <label class="song-info" id="song-info-3">
+            <a href="articles/articles.html">
+              <div class="title">
+                <p>La chronologie des concepts</p>
+              </div>
+            </a>
+          </label>
+        </div>
+      </div>
     </div>
   </div>
+  <form action="articles/articles.html" method="get" target="_blank" id="form-articles">
+    <button class="styled-articles" type="submit">Articles</button>
+  </form>
+
   <!----------------------------------------------  FOOTER  ------------------------------------------>
   <footer>
     <div id="adresse">
@@ -175,8 +186,9 @@
       <h2>Nous contacter</h2>
       <h4>02 35 88 01 96</h4>
       <h4>obs.rouen@club-internet.fr</h4>
-      </div>
-    </footer>
+    </div>
+  </footer>
+
 </body>
 
 </html>
