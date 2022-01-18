@@ -1,0 +1,261 @@
+html{
+    font-family:sans-serif;
+    background-color: #191925;
+    color:white;
+    margin: auto;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: -8px;
+        background-color: #191925;
+        opacity: 0.9;
+        align-items: center;
+        flex-direction: row;
+        border-bottom: #1096d1 1px solid;
+        position: fixed;
+        z-index: 5;
+    }
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navDiv{
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+        margin-bottom: -10px;
+    }
+    
+    .navImage{
+        width: 3em;
+    }
+    
+    #logoObservatiore{
+        width: 6em;
+        padding-bottom: 0.5rem;
+    }
+    
+    #Titre{
+        font-size: 1.8em;
+        width: 30%;
+        text-align: center;
+    }
+    
+    /* -------------------------------------- MENU HAMBOURGER ----------------------------------------- */
+    
+    .navHamburger{
+        display: none;
+    }
+    
+    #menuHamburger{
+        display: none;
+        position: absolute;
+        background: #191925;
+        border: solid #1096d1 1px;
+        margin: 0;
+        border-left-style: none;
+        border-top-style: none;
+        margin-left:-8px;
+        padding-top: 10px;
+    }
+    
+    #menuHamburger ul{
+        padding: 20px;
+    }
+    
+    #menuHamburger ul li{
+        list-style: none;
+        margin-bottom: 1em;
+        font-size: 1.2em;
+    }
+    
+    @media all and (max-width:1024px) {
+        .navDiv{
+            display: none;
+        }
+    
+        #Titre{
+            width: 70%;
+            text-align: center;
+        }
+    
+        #logoObservatiore{
+            display: none;
+        }
+    
+        .navHamburger{
+            display: flex;
+        }
+    
+        #hamburger-logo{
+            display: block;
+            width: 3em;
+            color: white;
+        }
+    }
+    
+    /* ----------------------------------- MENU LISTE DEROULANTE ------------------------------------------ */
+    
+    .hideActiviteMenu .drop{
+        display: none;
+    }
+    
+    .hideActiviteMenu:hover .drop{
+        display: block;
+        position: absolute;
+        list-style: none;
+        text-align: center;
+        background-color: #191925;
+        border: 1px solid #1096d1;
+        border-top-style: none;
+        margin-left: -35px;
+    }
+    
+    .hideActiviteMenu .drop ul{
+        padding: 0;
+        text-align: center;
+        padding: 10px;
+        margin: 0px 10px;
+    }
+    
+    .hideActiviteMenu .drop ul li{
+        list-style: none;
+        margin-bottom: 1em;
+    }
+    
+    .hideActiviteMenu .drop ul li a{
+        font-size: 1.2em;
+    }
+    
+    .hideActiviteMenu .drop ul li a:hover{
+        opacity: 0.8;
+    }
+    
+    .hideObservatoireMenu{
+        color: white;
+    }
+    
+    .hideObservatoireMenu .drop2{
+        display: none;
+    }
+    
+    .hideObservatoireMenu:hover .drop2{
+        display: block;
+        position: absolute;
+        list-style: none;
+        text-align: center;
+        background-color: #191925;
+        border: 1px solid #1096d1;
+        border-top-style: none;
+        margin-left: 35px;
+    }
+    
+    .hideObservatoireMenu .drop2 ul{
+        padding: 0;
+        text-align: center;
+        padding: 10px;
+        margin: 0px 10px;
+    }
+    
+    .hideObservatoireMenu .drop2 ul li{
+        list-style: none;
+        margin-bottom: 1em;
+    }
+    
+    .hideObservatoireMenu .drop2 ul li a{
+        font-size: 1.2em;
+    }
+    
+    .hideObservatoireMenu .drop2 ul li a:hover{
+        opacity: 0.8;
+    }
+/* ----------------------------------- Main ------------------------------------------ */
+main p{
+    font-size: 1.1rem;
+}
+main{
+    padding-top: 100px;
+}
+
+.ephemerides{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.ephemerides p{
+    margin-top: 2%;
+}
+#paragraphe{
+    display:flex;
+    flex-flow:row;
+    justify-content: space-evenly;
+    gap: 2%;
+    padding-bottom: 2%;
+    background-color: #111118;
+}
+#paragraphe p{
+    margin: 1%;
+}
+
+
+#evenement{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#planete{
+    display: flex;  
+    flex-direction: column;
+    max-width:45%;
+}
+
+.paragraphe h2{
+    text-align: center;
+}
+    /* --------------------------------------- FOOTER -------------------------------------------------*/
+    
+footer{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    border-top: #1096d1 solid 1px;    
+}
+footer h2{
+    font-size: 3.8vh;
+    text-align: center;
+}
+#map{
+    max-height: 220px;
+    max-width: 220px;
+}
+
+#adresse{   
+    margin-top: -10px;
+}
+
+#contacter{
+    margin-top: -10px;
+    text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+    #paragraphe{
+        flex-flow:column;
+    }
+    footer{
+        flex-direction:column; 
+    }
+    .ephemerides img{
+        max-width: 100%;
+    }
+}

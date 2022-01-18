@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Galerie</title>
+    <link href="galerie.css" rel="stylesheet" type="text/css" />
+    <script defer src="galerie.js"></script>
+    <body>
+        <header>
+            <nav>
+              <div class="navHamburger" onclick="doClickHamburger()">
+                    <img class="navDivHamburger" src="https://img.icons8.com/material-outlined/24/FFFFFF/menu--v3.png" alt="Menu" id="hamburger-logo"/>
+              </div>
+              <img id="logoObservatiore" src="../images/logoObservatoire.jpg" alt="logo du site de l'observatoire de Rouen">
+              <a class='navBar' href="../index.html">
+                <div class="navDiv">
+                  <img class="navImage" src="https://img.icons8.com/ios/50/FFFFFF/home--v1.png" alt="logo étoile">
+                  <p>ACCUEIL</p>
+                </div>
+              </a>
+                <a class='navBar' href="../presentation/presentation.html">
+                <div class="navDiv">
+                    <img class="navImage" src="https://img.icons8.com/ios/90/FFFFFF/star--v1.png" alt="logo présentation">
+                    <p>PRÉSENTATION</p>
+                </div>
+              </a>
+                <div id="Titre">OBSERVATOIRE ASTRONOMIQUE DE ROUEN</div>
+                <div class="navDiv" id="activite">
+                    <img class="navImage" src="https://img.icons8.com/material-outlined/48/FFFFFF/activity-feed.png" alt="logo activite ">
+                    <div class="hideActiviteMenu" id="menuActivite">
+                        <p class="titreActivite">ACTIVITÉS</p>
+                        <div class="drop">
+                            <ul>
+                                <li><a class="hideNavBar" href="">Galerie</a></li>
+                                <li><a class="hideNavBar" href="../agenda/agenda.html">Agenda</a></li>
+                                <li><a class="hideNavBar" href="../articles/articles.html">Articles</a></li>
+                                <li><a class="hideNavBar" href="../ephemerides/eph.html">Ephemerides</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="navDiv" id="observatoire+">
+                  <img class="navImage" src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/FFFFFF/external-observatory-space-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" alt="logo Observatoire">
+                  <div class="hideObservatoireMenu" id="menuObservatoire">
+                      <p class="titreObservatoire">L'OBSERVATOIRE ET VOUS</p>
+                      <div class="drop2">
+                          <ul>
+                              <li><a class="hideNavBar" href="../questions/questions.html">Questions</a></li>
+                              <li><a class="hideNavBar" href="../propos/propos.html">À propos</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </nav>
+            <div class="hideHamburgerMenu" id="menuHamburger">
+                <ul>
+                    <li><a class='hideNavBar' href="../index.html">Accueil</a></li>
+                    <li><a class='hideNavBar' href="../presentation/presentation.html">Présentation</a></li>
+                    <li><a class='hideNavBar' href="../agenda/agenda.html">Agenda</a></li>
+                    <li><a class='hideNavBar' href="../galerie/galerie.html">Galerie</a></li>
+                    <li><a class='hideNavBar' href="../articles/articles.html">Articles</a></li>
+                    <li><a class='hideNavBar' href="eph.html">Ephemerides</a></li>
+                    <li><a class='hideNavBar' href="../questions/questions.html">Questions</a></li>
+                    <li><a class='hideNavBar' href="../propos/propos.html">À propos</a></li>
+                </ul>
+            </div>
+        </header>
+    </body>
+</html>

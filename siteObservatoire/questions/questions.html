@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Questions</title>
+    <link href="questions.css" rel="stylesheet" type="text/css" />
+    <script defer src="questions.js"></script>
+    <body>
+        <header>
+            <nav>
+              <div class="navHamburger" onclick="doClickHamburger()">
+                    <img class="navDivHamburger" src="https://img.icons8.com/material-outlined/24/FFFFFF/menu--v3.png" alt="Menu" id="hamburger-logo"/>
+              </div>
+              <img id="logoObservatiore" src="../images/logoObservatoire.jpg" alt="logo du site de l'observatoire de Rouen">
+              <a class='navBar' href="../index.html">
+                <div class="navDiv">
+                  <img class="navImage" src="https://img.icons8.com/ios/50/FFFFFF/home--v1.png" alt="logo étoile">
+                  <p>ACCUEIL</p>
+                </div>
+              </a>
+                <a class='navBar' href="../presentation/presentation.html">
+                <div class="navDiv">
+                    <img class="navImage" src="https://img.icons8.com/ios/90/FFFFFF/star--v1.png" alt="logo présentation">
+                    <p>PRÉSENTATION</p>
+                </div>
+              </a>
+                <div id="Titre">OBSERVATOIRE ASTRONOMIQUE DE ROUEN</div>
+                <div class="navDiv" id="activite">
+                    <img class="navImage" src="https://img.icons8.com/material-outlined/48/FFFFFF/activity-feed.png" alt="logo activite ">
+                    <div class="hideActiviteMenu" id="menuActivite">
+                        <p class="titreActivite">ACTIVITÉS</p>
+                        <div class="drop">
+                            <ul>
+                                <li><a class="hideNavBar" href="../galerie/galerie.html">Galerie</a></li>
+                                <li><a class="hideNavBar" href="../agenda/agenda.html">Agenda</a></li>
+                                <li><a class="hideNavBar" href="../articles/articles.html">Articles</a></li>
+                                <li><a class="hideNavBar" href="../ephemerides/eph.html">Ephemerides</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="navDiv" id="observatoire+">
+                  <img class="navImage" src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/FFFFFF/external-observatory-space-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" alt="logo Observatoire">
+                  <div class="hideObservatoireMenu" id="menuObservatoire">
+                      <p class="titreObservatoire">L'OBSERVATOIRE ET VOUS</p>
+                      <div class="drop2">
+                          <ul>
+                              <li><a class="hideNavBar" href="">Questions</a></li>
+                              <li><a class="hideNavBar" href="../propos/propos.html">À propos</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </nav>
+            <div class="hideHamburgerMenu" id="menuHamburger">
+                <ul>
+                    <li><a class='hideNavBar' href="../index.html">Accueil</a></li>
+                    <li><a class='hideNavBar' href="../presentation/presentation.html">Présentation</a></li>
+                    <li><a class='hideNavBar' href="../agenda/agenda.html">Agenda</a></li>
+                    <li><a class='hideNavBar' href="../galerie/galerie.html">Galerie</a></li>
+                    <li><a class='hideNavBar' href="../articles/articles.html">Articles</a></li>
+                    <li><a class='hideNavBar' href="../ephmerides/eph.html">Ephemerides</a></li>
+                    <li><a class='hideNavBar' href="">Questions</a></li>
+                    <li><a class='hideNavBar' href="../propos/propos.html">À propos</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <main>
+                
+           <div id="global">
+                <div class="formulaire" method="post">
+                    <h1>Besoins d'aide?</h1>
+                        <label for="theme">Quel est l'objet de votre question?</label>
+                        <select name="theme" id="theme">
+                            <option value="astronomie">Astronomie général</option>
+                            <option value="site">Site web</option>
+                            <option value="observatoire">Observatoire</option>
+                            <option value="autre">Autre</option>
+                        </select>   
+
+                        <input type="email" id="email" name="email" required minlength="4" placeholder="adresse.email@gmail.com" required>
+                        <textarea name="objet" id="objet" cols="30" rows="10" placeholder="Écrivez ici" required></textarea>
+                        <button class="button" type="button" onclick="effacer()">Envoyer</button>
+                        <?php
+                        if(isset($_POST['message'])){
+                            $entete  = 'MIME-Version: 1.0' . "\r\n";
+                            $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+                            $entete .= 'From: ' . $_POST['email'] . "\r\n";
+                    
+                            $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
+                            <p><b>thème : </b>' . $_POST['nom'] . '<br>
+                            <b>Email : </b>' . $_POST['email'] . '<br>
+                            <b>Message : </b>' . $_POST['objet'] . '</p>';
+                    
+                            $retour = mail('wayan.spam@gmail.com', 'Envoi depuis page Contact', $message, $entete);
+                            if($retour) {
+                                echo '<p>Votre message a bien été envoyé.</p>';
+                            }
+                        }
+                        ?>
+                    </div>             
+                <div id="image">
+                    <div class="semi-circle"></div>
+                    <img src="http://astrosurf.com/obsrouen/americam.jpg" alt="fuzée">
+                </div>
+            </div>
+        </main>
+        <!----------------------------------------------  FOOTER  ------------------------------------------>
+ <footer>
+    <div id="adresse">
+      <h4>Impasse Adrien AUZOUT</h4>
+      <h4>Terre-plein de la Fontaine Sainte-Marie</h4>
+      <h4>76000 ROUEN</h4>
+    </div>
+    <div>
+      <img id="map" src="../images/plan.jpg" alt="plan de l'emplacement de l'observatoire">
+    </div>
+    <div id='contacter'>
+      <h2>Nous contacter</h2>
+      <h4>02 35 88 01 96</h4>
+      <h4>obs.rouen@club-internet.fr</h4>
+      </div>
+    </footer>
+
+    </body>
+</html>
