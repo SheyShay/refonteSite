@@ -66,6 +66,7 @@ html{
     
     #menuHamburger ul{
         padding: 20px;
+        padding-top:100px;
     }
     
     #menuHamburger ul li{
@@ -97,6 +98,9 @@ html{
             width: 3em;
             color: white;
         }
+        nav{
+          position: absolute;
+        }
     }
     
     /* ----------------------------------- MENU LISTE DEROULANTE ------------------------------------------ */
@@ -117,7 +121,6 @@ html{
     }
     
     .hideActiviteMenu .drop ul{
-        padding: 0;
         text-align: center;
         padding: 10px;
         margin: 0px 10px;
@@ -156,7 +159,6 @@ html{
     }
     
     .hideObservatoireMenu .drop2 ul{
-        padding: 0;
         text-align: center;
         padding: 10px;
         margin: 0px 10px;
@@ -251,6 +253,7 @@ footer h2{
 @media (max-width: 1200px) {
     #paragraphe{
         flex-flow:column;
+        align-items: center;
     }
     footer{
         flex-direction:column; 
