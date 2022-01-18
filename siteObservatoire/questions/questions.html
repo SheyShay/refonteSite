@@ -72,7 +72,7 @@
         <main>
                 
            <div id="global">
-                <div class="formulaire" method="post">
+                <div class="formulaire">
                     <h1>Besoins d'aide?</h1>
                         <label for="theme">Quel est l'objet de votre question?</label>
                         <select name="theme" id="theme">
@@ -82,30 +82,13 @@
                             <option value="autre">Autre</option>
                         </select>   
 
-                        <input type="email" id="email" name="email" required minlength="4" placeholder="adresse.email@gmail.com" required>
-                        <textarea name="objet" id="objet" cols="30" rows="10" placeholder="Écrivez ici" required></textarea>
+                        <input type="email" id="email" name="email" required minlength="4" placeholder="adresse.email@gmail.com">
+                        <textarea name="objet" id="objet" cols="30" rows="10" placeholder="Écrivez ici"></textarea>
                         <button class="button" type="button" onclick="effacer()">Envoyer</button>
-                        <?php
-                        if(isset($_POST['message'])){
-                            $entete  = 'MIME-Version: 1.0' . "\r\n";
-                            $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-                            $entete .= 'From: ' . $_POST['email'] . "\r\n";
-                    
-                            $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
-                            <p><b>thème : </b>' . $_POST['nom'] . '<br>
-                            <b>Email : </b>' . $_POST['email'] . '<br>
-                            <b>Message : </b>' . $_POST['objet'] . '</p>';
-                    
-                            $retour = mail('wayan.spam@gmail.com', 'Envoi depuis page Contact', $message, $entete);
-                            if($retour) {
-                                echo '<p>Votre message a bien été envoyé.</p>';
-                            }
-                        }
-                        ?>
                     </div>             
                 <div id="image">
                     <div class="semi-circle"></div>
-                    <img src="http://astrosurf.com/obsrouen/americam.jpg" alt="fuzée">
+                    <img src="../images/americam.jpg" alt="fuzée">
                 </div>
             </div>
         </main>
