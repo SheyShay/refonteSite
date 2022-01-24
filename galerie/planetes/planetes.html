@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Galerie-Planetes</title>
+    <link href="../soleil/soleil.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" sizes="128x128" href="../../images/logoObservatoireOnglet.png">
+    <script defer src="../../articles/articles.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navHamburger" onclick="doClickHamburger()">
+                <img class="navDivHamburger" src="https://img.icons8.com/material-outlined/24/FFFFFF/menu--v3.png"
+                    alt="Menu" id="hamburger-logo" />
+            </div>
+            <img id="logoObservatiore" src="../../images/logoObservatoire.jpg"
+                alt="logo du site de l'observatoire de Rouen">
+            <a class='navBar' href="../../index.html">
+                <div class="navDiv">
+                    <img class="navImage" src="https://img.icons8.com/ios/50/FFFFFF/home--v1.png" alt="logo étoile">
+                    <p>ACCUEIL</p>
+                </div>
+            </a>
+            <a class='navBar' href="../../presentation/presentation.html">
+                <div class="navDiv">
+                    <img class="navImage" src="https://img.icons8.com/ios/90/FFFFFF/star--v1.png"
+                        alt="logo présentation">
+                    <p>PRÉSENTATION</p>
+                </div>
+            </a>
+            <div id="Titre">OBSERVATOIRE ASTRONOMIQUE DE ROUEN</div>
+            <div class="navDiv" id="activite">
+                <img class="navImage" src="https://img.icons8.com/material-outlined/48/FFFFFF/activity-feed.png"
+                    alt="logo activite ">
+                <div class="hideActiviteMenu" id="menuActivite">
+                    <p class="titreActivite">ACTIVITÉS</p>
+                    <div class="drop">
+                        <ul>
+                            <li><a class="hideNavBar" href="../galerie.html">Galerie</a></li>
+                            <li><a class="hideNavBar" href="../../agenda/agenda.html">Agenda</a></li>
+                            <li><a class="hideNavBar" href="../../articles/articles.html">Articles</a></li>
+                            <li><a class="hideNavBar" href="../../ephemerides/eph.html">Ephemerides</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navDiv" id="observatoire+">
+                <img class="navImage"
+                    src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/FFFFFF/external-observatory-space-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
+                    alt="logo Observatoire">
+                <div class="hideObservatoireMenu" id="menuObservatoire">
+                    <p class="titreObservatoire">L'OBSERVATOIRE ET VOUS</p>
+                    <div class="drop2">
+                        <ul>
+                            <li><a class="hideNavBar" href="../../questions/questions.html">Questions</a></li>
+                            <li><a class="hideNavBar" href="../../propos/propos.html">À propos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hideHamburgerMenu" id="menuHamburger">
+            <ul>
+                <li><a class='hideNavBar' href="../../index.html">Accueil</a></li>
+                <li><a class='hideNavBar' href="../../presentation/presentation.html">Présentation</a></li>
+                <li><a class='hideNavBar' href="../../agenda/agenda.html">Agenda</a></li>
+                <li><a class='hideNavBar' href="../../galerie/galerie.html">Galerie</a></li>
+                <li><a class='hideNavBar' href="../../articles/articles.html">Articles</a></li>
+                <li><a class='hideNavBar' href="../../ephemerides/eph.html">Ephemerides</a></li>
+                <li><a class='hideNavBar' href="../../questions/questions.html">Questions</a></li>
+                <li><a class='hideNavBar' href="../../propos/propos.html">À propos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <a href="../galerie.html">
+            <img id="goBack" src="https://cdn-icons-png.flaticon.com/512/889/889631.png"
+                alt="flèche pour revenir en arrière">
+        </a>
+        <div id='titre'>
+            <h1>Les Planètes</h1>
+        </div>
+        <div id="ligne1">
+            <div class="tile">
+                <div class="articles">
+                    <div class="couverture">
+                        <img src="../../images/galerie/planetes/planete1.jpg" alt="photo de Mercure">
+                    </div>
+                    <div class="text">
+                        <p>Assez difficile à observer car toujours proche du Soleil, Mercure ressemble à la Lune mais sa
+                            température au sol peut atteindre 450°C
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="articles">
+                    <div class="couverture">
+                        <img src="../../images/galerie/planetes/planete2.jpg" alt="photo de Venus">
+                    </div>
+                    <div class="text">
+                        <p>Entourée d'une épaisse atmosphère de gaz carbonique, vénus est une planète inhospitalière. La
+                            température au sol peut atteindre 450°C avec une pression de 100 atmosphères terrestres.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="articles">
+                    <div class="couverture">
+                        <img src="../../images/galerie/planetes/planete3.jpg" alt="photo de Mars">
+                    </div>
+                    <div class="text">
+                        <p>Mars est une planète désertique agitée de tempêtes de poussières qui recouvrent parfois son
+                            sol basaltique. Dans un passé lointain, de l'eau liquide coula probablement sur Mars</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tile">
+                <div class="articles">
+                    <div class="couverture">
+                        <img src="../../images/galerie/planetes/planete4.jpg" alt="photo de Jupiter">
+                    </div>
+                    <div class="text">
+                        <p>Avec ses 140 000 km de diamètre, Jupiter est la géante du système solaire. C'est une planète
+                            gazeuse ( principalement de l'hydrogène ) qui tourne en moins de 10 heures sur elle-même
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ligne2">
+            <div class="tile">
+                <div class="articles">
+                    <div class="couverture">
+                        <img src="../../images/galerie/planetes/planete5.jpg" alt="photo de Saturne">
+                    </div>
+                    <div class="text">
+                        <p>Saturne est une planète gazeuse située à un milliard 500 millions de km du Soleil. Découverts
+                            il y a 400 ans par Galilée et Huygens, ses anneaux mesurent environ 300 000km de diamètre
+                            pour une épaisseur d'un km. Ils sont formés de poussières et de glace.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="articles">
+                    <div class="couverture">
+                        <img src="../../images/galerie/planetes/planete6.jpg" alt="photo d'Uranus">
+                    </div>
+                    <div class="text">
+                        <p>Découverte en 1781 par W. Herschel, Uranus n'est pas discernable à l'oeil nu. Située à près
+                            de 3 milliards de km du Soleil, sa lumière met près de 2h 45 min pour nous parvenir. C'est
+                            une planète géante de glace.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="articles">
+                    <div class="couverture">
+                        <img src="../../images/galerie/planetes/planete7.jpg" alt="photo de Neptune">
+                    </div>
+                    <div class="text">
+                        <p>Découverte par le calcul en 1846 par Le Verrier et Adams, Neptune n'est pas discernable à
+                            l'oeil nu. Située à 4,5 milliards de km du Soleil, c'est une planète géante de glace de 45
+                            000 km de diamètre.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!----------------------------------------------  FOOTER  ------------------------------------------>
+    <footer>
+        <div id="adresse">
+            <h4>Impasse Adrien AUZOUT</h4>
+            <h4>Terre-plein de la Fontaine Sainte-Marie</h4>
+            <h4>76000 ROUEN</h4>
+        </div>
+        <div>
+            <img id="map" src="../../images/plan.jpg" alt="plan de l'emplacement de l'observatoire">
+        </div>
+        <div id='contacter'>
+            <h2>Nous contacter</h2>
+            <h4>02 35 88 01 96</h4>
+            <h4>obs.rouen@club-internet.fr</h4>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Agenda</title>
+<link href="agenda.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" sizes="128x128" href="../images/logoObservatoireOnglet.png">
+<script defer src="agenda.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navHamburger" onclick="doClickHamburger()">
+                <img class="navDivHamburger" src="https://img.icons8.com/material-outlined/24/FFFFFF/menu--v3.png"
+                    alt="Menu" id="hamburger-logo" />
+            </div>
+            <img id="logoObservatiore" src="../images/logoObservatoire.jpg"
+                alt="logo du site de l'observatoire de Rouen">
+            <a class='navBar' href="../index.html">
+                <div class="navDiv">
+                    <img class="navImage" src="https://img.icons8.com/ios/50/FFFFFF/home--v1.png" alt="logo étoile">
+                    <p>ACCUEIL</p>
+                </div>
+            </a>
+            <a class='navBar' href="../presentation/presentation.html">
+                <div class="navDiv">
+                    <img class="navImage" src="https://img.icons8.com/ios/90/FFFFFF/star--v1.png"
+                        alt="logo présentation">
+                    <p>PRÉSENTATION</p>
+                </div>
+            </a>
+            <div id="Titre">OBSERVATOIRE ASTRONOMIQUE DE ROUEN</div>
+            <div class="navDiv" id="activite">
+                <img class="navImage" src="https://img.icons8.com/material-outlined/48/FFFFFF/activity-feed.png"
+                    alt="logo activite ">
+                <div class="hideActiviteMenu" id="menuActivite">
+                    <p class="titreActivite">ACTIVITÉS</p>
+                    <div class="drop">
+                        <ul>
+                            <li><a class="hideNavBar" href="../galerie/galerie.html">Galerie</a></li>
+                            <li><a class="hideNavBar" href="">Agenda</a></li>
+                            <li><a class="hideNavBar" href="../articles/articles.html">Articles</a></li>
+                            <li><a class="hideNavBar" href="../ephemerides/eph.html">Ephemerides</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navDiv" id="observatoire+">
+                <img class="navImage"
+                    src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/FFFFFF/external-observatory-space-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
+                    alt="logo Observatoire">
+                <div class="hideObservatoireMenu" id="menuObservatoire">
+                    <p class="titreObservatoire">L'OBSERVATOIRE ET VOUS</p>
+                    <div class="drop2">
+                        <ul>
+                            <li><a class="hideNavBar" href="../questions/questions.html">Questions</a></li>
+                            <li><a class="hideNavBar" href="../propos/propos.html">À propos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hideHamburgerMenu" id="menuHamburger">
+            <ul>
+                <li><a class='hideNavBar' href="../index.html">Accueil</a></li>
+                <li><a class='hideNavBar' href="../presentation/presentation.html">Présentation</a></li>
+                <li><a class='hideNavBar' href="">Agenda</a></li>
+                <li><a class='hideNavBar' href="../galerie/galerie.html">Galerie</a></li>
+                <li><a class='hideNavBar' href="../articles/articles.html">Articles</a></li>
+                <li><a class='hideNavBar' href="../ephemerides/eph.html">Ephemerides</a></li>
+                <li><a class='hideNavBar' href="../questions/questions.html">Questions</a></li>
+                <li><a class='hideNavBar' href="../propos/propos.html">À propos</a></li>
+            </ul>
+        </div>
+    </header>
+<!------------------------------------------------CALENDRIER ------------------------------------------------>
+    <main>
+        <div id="cld">
+            <div id="enteteCld">
+                <h2 id="cldT">JANVIER</h2>
+                <div id="avantEtApres">
+                    <button id="avant" class="cldBtn">◄</button>
+                    <button id="apres" class="cldBtn" style="margin-left: 20%;">►</button>
+                </div>
+            </div>
+
+            <div id="cldBoite">
+                <div id="jours">
+                    <div class="jour">lun</div>
+                    <div class="jour">mar</div>
+                    <div class="jour">mer</div>
+                    <div class="jour">jeu</div>
+                    <div class="jour">ven</div>
+                    <div class="jour">sam</div>
+                    <div class="jour">dim</div>
+                </div>
+
+                <div id="semaine1" class="semaine">
+                    <div class="case" id="1" onclick="changeColor(1)"></div>
+                    <div class="case" id="2" onclick="changeColor(2)"></div>
+                    <div class="case" id="3" onclick="changeColor(3)"></div>
+                    <div class="case" id="4" onclick="changeColor(4)"></div>
+                    <div class="case" id="5" onclick="changeColor(5)"></div>
+                    <div class="case" id="6" onclick="changeColor(6)"></div>
+                    <div class="case" id="7" onclick="changeColor(7)"></div>
+                </div>
+
+                <div id="semaine2" class="semaine">
+                    <div class="case" id="8" onclick="changeColor(8)"></div>
+                    <div class="case" id="9" onclick="changeColor(9)"></div>
+                    <div class="case" id="10" onclick="changeColor(10)"></div>
+                    <div class="case" id="11" onclick="changeColor(11)"></div>
+                    <div class="case" id="12" onclick="changeColor(12)"></div>
+                    <div class="case" id="13" onclick="changeColor(13)"></div>
+                    <div class="case" id="14" onclick="changeColor(14)"></div>
+                </div>
+
+                <div id="semaine3" class="semaine">
+                    <div class="case" id="15" onclick="changeColor(15)"></div>
+                    <div class="case" id="16" onclick="changeColor(16)"></div>
+                    <div class="case" id="17" onclick="changeColor(17)"></div>
+                    <div class="case" id="18" onclick="changeColor(18)"></div>
+                    <div class="case" id="19" onclick="changeColor(19)"></div>
+                    <div class="case" id="20" onclick="changeColor(20)"></div>
+                    <div class="case" id="21" onclick="changeColor(21)"></div>
+                </div>
+
+                <div id="semaine4" class="semaine">
+                    <div class="case" id="22" onclick="changeColor(22)"></div>
+                    <div class="case" id="23" onclick="changeColor(23)"></div>
+                    <div class="case" id="24" onclick="changeColor(24)"></div>
+                    <div class="case" id="25" onclick="changeColor(25)"></div>
+                    <div class="case" id="26" onclick="changeColor(26)"></div>
+                    <div class="case" id="27" onclick="changeColor(27)"></div>
+                    <div class="case" id="28" onclick="changeColor(28)"></div>
+                </div>
+
+                <div id="semaine5" class="semaine">
+                    <div class="case" id="29" onclick="changeColor(29)"></div>
+                    <div class="case" id="30" onclick="changeColor(30)"></div>
+                    <div class="case" id="31" onclick="changeColor(31)"></div>
+                    <div class="case" id="32" onclick="changeColor(32)"></div>
+                    <div class="case" id="33" onclick="changeColor(33)"></div>
+                    <div class="case" id="34" onclick="changeColor(34)"></div>
+                    <div class="case" id="35" onclick="changeColor(35)"></div>
+                </div>
+
+                <div id="semaine6" class="semaine">
+                    <div class="case" id="36" onclick="changeColor(36)"></div>
+                    <div class="case" id="37" onclick="changeColor(37)"></div>
+                    <div class="case" id="38" onclick="changeColor(38)"></div>
+                    <div class="case" id="39" onclick="changeColor(39)"></div>
+                    <div class="case" id="40" onclick="changeColor(40)"></div>
+                    <div class="case" id="41" onclick="changeColor(41)"></div>
+                    <div class="case" id="42" onclick="changeColor(42)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="center-legend">
+        <div class="legend">
+            <div id="legend-red"></div>
+            <p class="legend-paragraphe">Les places ne sont plus disponibles</p>
+        </div>
+        <div class="legend">
+            <div id="legend-blue"></div>
+            <p class="legend-paragraphe">Les places sont disponibles</p>
+        </div>
+        <div class="agenda-paragraphe">
+            <p>Prochaine séance publique le samedi 5 février 2022 à 21h 30, uniquement sur réservation par mail. Passe
+                sanitaire obligatoire. Masque obligatoire à l'intérieur du local. Entrée: 5 euros en individuel, 10
+                euros par famille (quel que soit le nombre de personnes).</p>
+            <p>Il n'y a plus de places disponibles pour la séance du samedi 5 février 2022, ni pour celles des samedis 5
+                mars et 2 avril.</p>
+            <p>La prochaine séance avec des places disponibles aura lieu le samedi 7 mai à 21h 30.</p>
+        </div>
+        </div>
+    </main>
+    <!----------------------------------------------------FOOTER------------------------------------------>
+    <footer>
+        <div id="adresse">
+            <h4>Impasse Adrien AUZOUT</h4>
+            <h4>Terre-plein de la Fontaine Sainte-Marie</h4>
+            <h4>76000 ROUEN</h4>
+        </div>
+        <div>
+            <img id="map" src="../images/plan.jpg" alt="plan de l'emplacement de l'observatoire">
+        </div>
+        <div id='contacter'>
+            <h2>Nous contacter</h2>
+            <h4>02 35 88 01 96</h4>
+            <h4>obs.rouen@club-internet.fr</h4>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>accueil</title>
+    <link href="presentation.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" sizes="128x128" href="../images/logoObservatoireOnglet.png">
+  </head>
+  
+  <body>
+    <header>
+        <nav id="haut">
+          <div class="navHamburger" onclick="doClickHamburger()">
+                <img class="navDivHamburger" src="https://img.icons8.com/material-outlined/24/FFFFFF/menu--v3.png" alt="Menu" id="hamburger-logo"/>
+          </div>
+          <img id="logoObservatiore" src="../images/logoObservatoire.jpg" alt="logo du site de l'observatoire de Rouen">
+          <a class='navBar' href="../index.html">
+            <div class="navDiv">
+              <img class="navImage" src="https://img.icons8.com/ios/50/FFFFFF/home--v1.png" alt="logo étoile">
+              <p>ACCUEIL</p>
+            </div>
+          </a>
+            <a class='navBar' href="../presentation/presentation.html">
+            <div class="navDiv">
+                <img class="navImage" src="https://img.icons8.com/ios/90/FFFFFF/star--v1.png" alt="logo présentation">
+                <p>PRÉSENTATION</p>
+            </div>
+          </a>
+            <div id="Titre">OBSERVATOIRE ASTRONOMIQUE DE ROUEN</div>
+            <div class="navDiv" id="activite">
+                <img class="navImage" src="https://img.icons8.com/material-outlined/48/FFFFFF/activity-feed.png" alt="logo activite ">
+                <div class="hideActiviteMenu" id="menuActivite">
+                    <p class="titreActivite">ACTIVITÉS</p>
+                    <div class="sale"></div>
+                    <div class="drop">
+                        <ul>
+                            <li><a class="hideNavBar" href="../galerie/galerie.html">Galerie</a></li>
+                            <li><a class="hideNavBar" href="../agenda/agenda.html">Agenda</a></li>
+                            <li><a class="hideNavBar" href="../articles/articles.html">Articles</a></li>
+                            <li><a class="hideNavBar" href="../ephemerides/eph.html">Ephemerides</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navDiv" id="observatoire+">
+              <img class="navImage" src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/FFFFFF/external-observatory-space-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" alt="logo Observatoire">
+              <div class="hideObservatoireMenu" id="menuObservatoire">
+                  <p class="titreObservatoire">L'OBSERVATOIRE ET VOUS</p>
+                  <div class="drop2">
+                      <ul>
+                          <li><a class="hideNavBar" href="../questions/questions.html">Questions</a></li>
+                          <li><a class="hideNavBar" href="../propos/propos.html">À propos</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </nav>
+        <div class="hideHamburgerMenu" id="menuHamburger">
+            <ul>
+                <li><a class='hideNavBar' href="../index.html">Accueil</a></li>
+                <li><a class='hideNavBar' href="../presentation/presentation.html">Présentation</a></li>
+                <li><a class='hideNavBar' href="../agenda/agenda.html">Agenda</a></li>
+                <li><a class='hideNavBar' href="../galerie/galerie.html">Galerie</a></li>
+                <li><a class='hideNavBar' href="../articles/articles.html">Articles</a></li>
+                <li><a class='hideNavBar' href="../ephemerides/eph.html">Ephemerides</a></li>
+                <li><a class='hideNavBar' href="../questions/questions.html">Questions</a></li>
+                <li><a class='hideNavBar' href="../propos/propos.html">À propos</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- -- --------------------------------------- MAIN PAGE -------------------------------------------- -->
+    <main id="haut">
+      <span id="haut"></span>
+      <div class="introPresentation" id="haut">
+        <h2 class="titrePresentation">Présentation</h2>
+        <a href="#lienStory" class="lienStory">
+        <div>
+          <h2>Histoire</h2>
+        </div>
+      </a>
+      </div>
+      <div class="teteDesc">
+        <div class="personne" id="eric" onclick="doClickPersonne('eric')">
+          <div class="tete" id="eric-tete">
+            <img src="../images/presentation/eric.jpg" alt="photo de Eric">
+          </div>
+          <ul class="front" id="eric-front">
+            <li>Eric</li>
+            <li>Président</li>
+          </ul>
+          <p class="desc" id="eric-desc">
+            Eric, notre Président, photographié près de son télescope de 260 mm de diamètre. Spécialiste du polissage des miroirs et de la photographie argentique, il est toujours partant pour des observations à la campagne.
+          </p>
+        </div>
+        <div class="personne" id="roger" onclick="doClickPersonne('roger')">
+          <div class="tete" id="roger-tete">
+            <img src="../images/presentation/roger.jpg"  alt="photo de Roger">
+          </div>
+          <ul class="front" id="roger-front">
+            <li>Roger</li>
+            <li>Vice-Président</li>
+          </ul>
+          <p class="desc" id="roger-desc">
+            Roger, notre Vice-Président. Grand bricoleur d'inventions astronomiques originales, il aime faire partager sa passion en toutes circonstances.
+          </p>
+        </div>
+        <div class="personne" id="valere" onclick="doClickPersonne('valere')">
+          <div class="tete" id="valere-tete">
+            <img src="../images/presentation/valere1.jpg"  alt="photo de Valere">
+          </div>
+          <ul class="front" id="valere-front">
+            <li>Valere</li>
+            <li>Vice-Président</li>
+          </ul>
+          <p class="desc" id="valere-desc">
+            Valère, notre autre Vice-Président. Il est intarissable dès qu'il s'agit d'animer les séances d'observations nocturnes du 1er samedi du mois. Spécialiste des images planétaires et lunaires, on le voit ici photographié à côté de son télescope de 250 mm de diamètre.
+          </p>
+        </div>
+        <div class="personne" id="jcd" onclick="doClickPersonne('jcd')">
+          <div class="tete" id="jcd-tete">
+            <img src="../images/presentation/jcd.jpg"  alt="photo de Jean-Christophe">
+          </div>
+          <ul class="front" id="jcd-front">
+            <li>Jean-Christophe</li>
+          </ul>
+          <p class="desc" id="jcd-desc">
+            Jean-Christophe observe le ciel grâce à un télescope Newton de 350 mm de diamètre et à une lunette FSQ 106 installés à poste fixe à la campagne. Astrophotographe hors pair et grand spécialiste du traitement d'images et de l'observation des exo-planètes, le catalogue Sh2 n'a plus aucun secret pour lui.
+          </p>
+        </div>
+        <div class="personne" id="guy" onclick="doClickPersonne('guy')" >
+          <div class="tete" id="guy-tete">
+            <img src="../images/presentation/guy2.jpg" alt="photo de Guy">
+          </div>
+          <ul class="front" id="guy-front">
+            <li>Guy</li>
+            <li>Trésorier</li>
+          </ul>
+          <p class="desc" id="guy-desc">
+            Guy, notre Trésorier, photographié à côté du télescope de 254 mm de diamètre dont il a assuré l'installation.  Grand amateur de cosmologie, ne lui parlez surtout pas du Big Bang, il n'y croît plus depuis longtemps!
+          </p>
+        </div>
+        <div class="personne" id="cecile" onclick="doClickPersonne('cecile')">
+          <div class="tete" id="cecile-tete">
+            <img src="../images/presentation/cecile.jpg"  alt="photo de Cecile">
+          </div>
+          <ul class="front" id="cecile-front">
+            <li>Cécile</li>
+            <li>Bibliothécaire</li>
+          </ul>
+          <p class="desc" id="cecile-desc">
+            Cécile, notre bibliothécaire. Gare à vous si vous laissez traîner les revues n'importe où!
+          </p>
+        </div>
+        <div class="personne" id="aymeric" onclick="doClickPersonne('aymeric')">
+          <div class="tete" id="aymeric-tete">
+            <img src="../images/presentation/aymeric.jpg"  alt="photo de Aymeric">
+          </div>
+          <ul class="front" id="aymeric-front">
+            <li>Aymeric</li>
+          </ul>
+          <p class="desc" id="aymeric-desc">
+            Grâce à son Dobson de 400 mm de diamètre, Aymeric est un spécialiste des objets du ciel profond.
+          </p>
+        </div>
+        <div class="personne" id="marwane" onclick="doClickPersonne('marwane')">
+          <div class="tete" id="marwane-tete">
+            <img src="../images/presentation/marwane.jpg"  alt="Marwane">
+          </div>
+          <ul class="front" id="marwane-front">
+            <li>Marwane</li>
+          </ul>
+          <p class="desc" id="marwane-desc">
+            Marwane est expert en photographies et traitements d'images planétaires et lunaires grâce à son Maksutov de 127 mm de diamètre. Il est, avec Pascal, le Rédacteur en chef du bulletin de l'Observatoire.
+          </p>
+        </div>
+        <div class="personne" id="pascal" onclick="doClickPersonne('pascal')">
+          <div class="tete" id="pascal-tete">
+            <img src="../images/presentation/pascal.jpg"  alt="photo de Pascal">
+          </div>
+          <ul class="front" id="pascal-front">
+            <li>Pascal</li>
+            <li>Secrétaire</li>
+          </ul>
+          <p class="desc" id="pascal-desc">
+            Photographié derrière le télescope de 127mm de Marwane, Pascal, notre Secrétaire, est toujours partant pour animer les soirées publiques, observer à la campagne,améliorer les instruments de l'Observatoire ou préparer le bulletin de liaison.
+          </p>
+        </div>
+        <div class="personne" id="jp" onclick="doClickPersonne('jp')">
+          <div class="tete" id="jp-tete">
+            <img src="../images/presentation/jp.jpg"  alt="photo de Jean-Paul">
+          </div>
+          <ul class="front" id="jp-front">
+            <li>Jean-Paul</li>
+          </ul>
+          <p class="desc" id="jp-desc">
+            Lors de nos observations à la campagne, Jean-Paul nous montre de magnifiques images du ciel profond grâce à son téléscope Schmidt-Cassegrain de 254 mm de diamètre.
+          </p>
+        </div>
+        <div class="personne" id="christiane" onclick="doClickPersonne('christiane')">
+          <div class="tete" id="christiane-tete">
+            <img src="../images/presentation/christiane.jpg"  alt="photo de Christiane">
+          </div>
+          <ul class="front" id="christiane-front">
+            <li>Christiane</li>
+            <li>bibliothécaire-adjointe</li>
+          </ul>
+          <p class="desc" id="christiane-desc">
+            Très active au niveau associatif et passionnée d'Astronomie, Christiane, notre bibliothécaire-adjointe, anime les soirées publiques et organise les visites de l'Observatoire par les Allemands dans le cadre du jumelage Rouen-Hanovre.
+          </p>
+        </div>
+        <div class="personne" id="daniel" onclick="doClickPersonne('daniel')">
+          <div class="tete" id="daniel-tete">
+            <img src="../images/presentation/daniel.jpg"  alt="photo de Daniel">
+          </div>
+          <ul class="front" id="daniel-front">
+            <li>Daniel</li>
+          </ul>
+          <p class="desc" id="daniel-desc">
+            Excellent animateur, Daniel aime recevoir le public et les scolaires. Il observe le ciel aux jumelles et grâce à un télescope de 115 mm de diamètre.
+          </p>
+        </div>
+        <div class="personne" id="michel" onclick="doClickPersonne('michel')">
+          <div class="tete" id="michel-tete">
+            <img src="../images/presentation/michel.jpg" alt="photo de Michel">
+          </div>
+          <ul class="front" id="michel-front">
+            <li>Michel</li>
+          </ul>
+          <p class="desc" id="michel-desc">
+            Photographié devant sa lunette 80 ED Orion, Michel réalise de magnifiques photographies du ciel profond à partir du centre-ville d'Evreux.
+          </p>
+        </div>
+        <div class="personne" id="pascalj" onclick="doClickPersonne('pascalj')">
+          <div class="tete" id="pascalj-tete">
+            <img src="../images/presentation/Pascal_Jeanneret.jpg" alt="photo de Pascal Jeanneret">
+          </div>
+          <ul class="front" id="pascalj-front">
+            <li>Pascal</li>
+            <li>bibliothécaire</li>
+          </ul>
+          <p class="desc" id="pascalj-desc">
+            Pascal , notre bibliothécaire, est toujours présent pour recevoir le public et les classes. Il est à l'origine de l'installation sur le toit de l'Observatoire de notre caméra de suivi des météorites dans le cadre du projet national "Fripon".
+          </p>
+        </div>
+        <div class="personne" id="patrick" onclick="doClickPersonne('patrick')">
+          <div class="tete" id="patrick-tete">
+            <img src="../images/presentation/patrick.jpg" alt="photo de Patrick">
+          </div>
+          <ul class="front" id="patrick-front">
+            <li>Patrick</li>
+            <li>Trésorier-adjoint</li>
+          </ul>
+          <p class="desc" id="patrick-desc">
+            Patrick, notre trésorier adjoint, est l'un des animateurs les plus actifs de l'Observatoire. Il réalise, grâce à sa lunette de 140 mm de diamètre, de magnifiques photos des objets célestes à partir de son balcon en ville.
+        </div>
+      </div>
+      <div class="story" id="lienStory">
+        <h2 id="pascool">Histoire de l'Observatoire</h2>
+        <p class="entete">
+          L'observatoire Astronomique de Rouen a été fondé en 1884 à l'initiative de Ludovic Gully, professeur de Mathématiques à Rouen. Voici un extrait du journal de Rouen daté du 1er décembre 1884 et relatant cette fondation.
+        </p>
+        <div class="img">
+          <img id="gully" src="../images/presentation/gully.jpg" alt="photo de Ludovic Gully">
+          <p class="pgully">Ludovic Gully et la lunette de 160 mm de l'Observatoire</p>
+        </div>
+        <p>
+          Dès sa création, des observateurs talentueux comme M. Georges Caron, vice président de l'association qui possédait un observatoire personnel à Lillebonne, fixent sur la pellicule des phénomènes célestes exceptionnels comme le passage de la comète de Halley ou l'éclipse perlée du 17 avril 1912.
+        </p>
+          <div class="img" id="fortimg">
+            <div id="oneimg">
+              <img src="../images/presentation/eclipse1912.jpg" id="eclipse1912" onclick="test('eclipse1912')" alt="photo de l'eclipse perlée du 17 avril 1912">
+              <p>L'éclipse perlée du 17 avril 1912</p>
+            </div>
+            <div id="twoimg">
+              <img src="../images/presentation/eclipse1912rouen.jpg" id="eclipserouen" alt="photo de l'éclipse de soleil du 17 avril 1912 à Rouen">
+              <p>L'éclipse de soleil du 17 avril 1912 à Rouen 12h9m</p>
+            </div>
+            <div id="threeimg">
+              <img src="../images/presentation/halley1910.jpg" id="halley" alt="photo de la comète de Halley le 30 mai 1910">
+              <p>La comète de Halley le 30 mai 1910</p>
+            </div>
+            <div id="fortimg">
+              <img src="../images/presentation/cometemorehouse.png" id="comete" alt="photo de la comète de Morebouse">
+              <p>La comète Morehouse photographiée par Georges Caron</p>
+            </div>
+        </div>
+        <div class="Dorothe">
+          <div class="txt">
+            <p>Le membre le plus éminent de l'Observatoire, au moment de sa création, était sans conteste Dorothée Klumpke ( 1861-1942).</p>
+            <p>Citoyenne américaine, elle vécut 50 ans en France et fut la première femme à obtenir le titre de Docteur en Astronomie à la Sorbonne. Elle participa à l'élaboration de la carte du ciel et effectua des observations astronomiques en ballon. Elle aida beaucoup l'Observatoire Astronomique de Rouen par son soutien matériel et moral.</p>
+            <p>Le 17 août 1885, Ludovic Gully découvre, grâce à un télescope de 160 mm de diamètre que nous possédons encore, la supernova S Andromedae dans la galaxie d'Andromède.</p>
+            <p>En 1895, l'Observatoire acquiert notre lunette de 160mm grâce  à une souscription publique initiée par un membre actif, M. Bouis.</p>
+            <p>Le 31 mars 1901, l'Observatoire inaugure, en présence de Dorothée Klumpke, un nouveau télescope de 300 mm de diamètre. D'une taille considérable à l'époque pour un instrument d'amateur, ce télescope demeure pour nous un grand mystère, car aucun résultat photographique ou observationnel ne lui est attribué dans nos archives. On trouve une dernière mention le concernant dans un registre de 1929 qui le décrit comme "inutilisable et démonté".... A-t-il jamais servi un jour?</p>
+            <p>A la mort du vice président Caron en 1919, l'Observatoire hérite de l'astrographe double de ce dernier: ce sont les lunettes de 110 et 130mm actuellement exposées dans nos locaux.</p>
+            <p>Après la disparition en 1905 du fondateur Ludovic Gully, se succèdent à la présidence de l'Observatoire Messieurs: Delehaye (de 1905 à 1920), Salvignac (de 1920 à 1936), Adrien Métayer (de 1936 à 1952), Louis Lemarignier (de 1952 à 1955), Jean Lefebvre (de 1955 à 1963), Edgard Jouis (de 1963 à 1976), André Clastot (de 1976 à 1990) et Eric Mandon (à partir de 1990).</p>
+          </div>
+          <div class="portrait">
+            <img src="../images/presentation/dorothee.jpg" alt="photo de Dorothée Klumpke">
+            <p>Dorothée Klumpke</p>
+          </div>
+        </div>
+        <div class="imageContext">
+          <div id="onetxt">
+            <img src="../images/presentation/T160.jpg" alt="photo de la première lunette de 160mm">
+            <p>Première lunette de 160mm</p>
+          </div>
+          <div id="twotxt">
+            <img src="../images/presentation/l160.jpg" alt="photo de la grande lunette de 160mm">
+            <p>Grande lunette de 160mm</p>
+          </div>
+          <div id="threetxt">
+            <img src="../images/presentation/l130.jpg" alt="photo de la lunette 110-130mm">
+            <p>La double lunette 110-130 mm et son système d'entraînement par horlogerie</p>
+          </div>
+        </div>
+        <div class="vulga">
+          <div class="part1">
+            <p> Les buts premiers de l'association (loi 1901) n'ont pas changé depuis sa création : ce sont la vulgarisation de l'Astronomie et l'étude scientifique des phénomènes célestes.</p>
+            <p>Moyennant une modeste participation financière, nous recevons le public le premier samedi de chaque mois à partir de 21h30:  à cet effet, l'observatoire s'est doté d'un planétarium GOTO EX-3, outil pédagogique qui remporte un grand succès. Nous recevons également, avec participation financière, des groupes et classes de tous niveaux. Enfin l'Observatoire ouvre ses portes à l'occasion de phénomènes astronomiques exceptionnels : éclipses, comètes brillantes, nuit des étoiles etc.....</p>
+            <p>Mais l'on peut également choisir de venir partager sa passion pour l'astronomie en devenant membre de l'Observatoire. Pour cela, il suffit de s'acquitter d'une cotisation annuelle de 35 € (tarif plein) ou 17,5 € (tarif réduit pour les scolaires et les étudiants). L'adhésion donne accès aux séances d'observation à Rouen et à la campagne, à la bibliothèque, à la réception du bulletin et aux différentes activités tous les samedis soir à partir de 21h30.</p>
+            <img class="goto" src="../images/presentation/gotoex3.jpg" alt="photo du planétarium gotoex3">
+            <p class="desc">planétarium Gotoex3</p>
+          </div>
+          <div class="part2">
+            <div class="imgContxt">
+              <div class="t300">
+                <img src="../images/presentation/t300.jpg" alt="photo du télescope de 300mm">
+                <p>Le télescope de 300mm</p>
+              </div>
+              <div class="meade">
+                <img src="../images/presentation/T254.jpg" alt="photo du télescope de 254mm">
+                <p>télescope Meade de 254 mm de diamètre (F/D=6,3) sur une monture Takahashi <br>Temma EM 400 </p>
+              </div>
+            </div>
+            <div class="txt">
+              <p id="txt">Outre la lunette de 160 mm de diamètre, nous disposons de plusieurs instruments d'observation dont un télescope de 300mm de diamètre et un télescope Meade de 254 mm de diamètre (F/D=6,3) sur une monture Takahashi Temma EM 400 . Ce télescope Meade a été remplacé en 2019 par un télescope Célestron 11 de 280 mm de diamètre (F/D=10).  Le C.11est muni d'une caméra Atik 460 EX.   </p>
+              <p id="txt">L'Observatoire de Rouen est également lié à la Société Astronomique de France ( SAF ) puisqu'il est membre, correspondant régional et lauréat de cette société depuis de très nombreuses années. Plusieurs membres de l'Observatoire sont aussi lauréats de la SAF à titre individuel.</p>
+            </div>
+            <div class="imgContxt" id="two">
+              <div class="c11">
+                <img src="../images/presentation/c11.jpg" alt="photo du télescope Célestron 11 sur sa monture Takahashi Temma EM 400">
+                <p>Le télescope Célestron 11 sur sa monture Takahashi Temma EM 400</p>
+              </div>
+              <div class="t260">
+                <img src="../images/presentation/t260.jpg" alt="photo du télescope de 260mm">
+                <p>Le télecsope de 260mm pour observer le fond de la campagne</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+  <footer>
+      <div id="adresse">
+          <h4>Impasse Adrien AUZOUT</h4>
+          <h4>Terre-plein de la Fontaine Sainte-Marie</h4>
+          <h4>76000 ROUEN</h4>
+      </div>
+      <div>
+        <img id="map" src="../images/plan.jpg" alt="plan de l'emplacement de l'observatoire">
+      </div>
+      <div id='contacter'>
+        <h2>Nous contacter</h2>
+        <h4>02 35 88 01 96</h4>
+        <h4>obs.rouen@club-internet.fr</h4>
+      </div>
+  </footer>
+  
+  <script defer src="presentation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Éphemerides</title>
+    <link href="eph.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" sizes="128x128" href="../images/logoObservatoireOnglet.png">
+    <script defer src="eph.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+              <div class="navHamburger" onclick="doClickHamburger()">
+                    <img class="navDivHamburger" src="https://img.icons8.com/material-outlined/24/FFFFFF/menu--v3.png" alt="Menu" id="hamburger-logo"/>
+              </div>
+              <img id="logoObservatiore" src="../images/logoObservatoire.jpg" alt="logo du site de l'observatoire de Rouen">
+              <a class='navBar' href="../index.html">
+                <div class="navDiv">
+                  <img class="navImage" src="https://img.icons8.com/ios/50/FFFFFF/home--v1.png" alt="logo étoile">
+                  <p>ACCUEIL</p>
+                </div>
+              </a>
+                <a class='navBar' href="../presentation/presentation.html">
+                <div class="navDiv">
+                    <img class="navImage" src="https://img.icons8.com/ios/90/FFFFFF/star--v1.png" alt="logo présentation">
+                    <p>PRÉSENTATION</p>
+                </div>
+              </a>
+                <div id="Titre">OBSERVATOIRE ASTRONOMIQUE DE ROUEN</div>
+                <div class="navDiv" id="activite">
+                    <img class="navImage" src="https://img.icons8.com/material-outlined/48/FFFFFF/activity-feed.png" alt="logo activite ">
+                    <div class="hideActiviteMenu" id="menuActivite">
+                        <p class="titreActivite">ACTIVITÉS</p>
+                        <div class="drop">
+                            <ul>
+                                <li><a class="hideNavBar" href="../galerie/galerie.html">Galerie</a></li>
+                                <li><a class="hideNavBar" href="../agenda/agenda.html">Agenda</a></li>
+                                <li><a class="hideNavBar" href="../articles/articles.html">Articles</a></li>
+                                <li><a class="hideNavBar" href="">Ephemerides</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="navDiv" id="observatoire+">
+                  <img class="navImage" src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/FFFFFF/external-observatory-space-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" alt="logo Observatoire">
+                  <div class="hideObservatoireMenu" id="menuObservatoire">
+                      <p class="titreObservatoire">L'OBSERVATOIRE ET VOUS</p>
+                      <div class="drop2">
+                          <ul>
+                              <li><a class="hideNavBar" href="../questions/questions.html">Questions</a></li>
+                              <li><a class="hideNavBar" href="../propos/propos.html">À propos</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </nav>
+            <div class="hideHamburgerMenu" id="menuHamburger">
+                <ul>
+                    <li><a class='hideNavBar' href="../index.html">Accueil</a></li>
+                    <li><a class='hideNavBar' href="../presentation/presentation.html">Présentation</a></li>
+                    <li><a class='hideNavBar' href="../agenda/agenda.html">Agenda</a></li>
+                    <li><a class='hideNavBar' href="../galerie/galerie.html">Galerie</a></li>
+                    <li><a class='hideNavBar' href="../articles/articles.html">Articles</a></li>
+                    <li><a class='hideNavBar' href="">Ephemerides</a></li>
+                    <li><a class='hideNavBar' href="../questions/questions.html">Questions</a></li>
+                    <li><a class='hideNavBar' href="../propos/propos.html">À propos</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="ephemerides">
+                <h1>Éphemerides</h1>
+                <img src="../images/cieljanvier.gif" alt="carte du ciel du mois de janvier">
+                <p>Toutes les heures sont données en Temps Universel (T.U). Ajouter une heure en hiver et deux heures en été. Les cartes célestes ont été réalisées par la <span><a href="https://saf-astronomie.fr/">Société Astronomique de France</a></span>.</p>
+            </div>
+            <div id='paragraphe'>
+                <div id="evenement">
+                    <h2>Les évènement de janvier 2022</h2>
+                    <p>Nouvelle Lune le dimanche <b>2 janvier</b> à 18h 33</p>
+                    <p>Le mardi <b>4 janvier</b> en soirée, le mince croissant lunaire accompagne Mercure et Saturne au-dessus de l'horizon sud-ouest. Mercure est à 5° de hauteur au-dessus de l'horizon à 17h</p>
+                    <p>Le mercredi <b>5 janvier</b> en soirée, le croissant lunaire se situe  à 8° au sud-ouest de Jupiter.</p>
+                    <p>Premier Quartier de Lune le dimanche <b>9 janvier</b> à 18h 11</p>
+                    <p>Pleine Lune le lundi <b>17 janvier</b> à 23h 34</p>
+                    <p>Dernier Quartier de Lune le mardi <b>25 janvier</b> à 13h 40</p>
+                    <p>Le samedi <b>29 janvier</b> à l'aube, le croissant lunaire, Vénus et Mars sont visibles au-dessus de l'horizon sud-est dans la constellation du Sagittaire</p>
+
+                </div>    
+                <div id="planete">
+                    <h2>Les Planètes</h2>
+                    <p>Mercure est visible  le soir pendant la première moitié du mois vers le sud-ouest</p>
+                    <p>Vénus redevient visible à l'aube en fin de mois</p>
+                    <p> Mars est observable en fin de nuit au-dessus de l'horizon sud-est.</p>
+                    <p>Jupiter reste observable le soir</p>
+                    <p>Saturne est de plus en plus difficile à observer en début de nuit.</p>
+                </div>
+            </div>
+        </main>
+         <!----------------------------------------------  FOOTER  ------------------------------------------>
+  <footer>
+    <div id="adresse">
+      <h4>Impasse Adrien AUZOUT</h4>
+      <h4>Terre-plein de la Fontaine Sainte-Marie</h4>
+      <h4>76000 ROUEN</h4>
+    </div>
+    <div>
+      <img id="map" src="../images/plan.jpg" alt="plan de l'emplacement de l'observatoire">
+    </div>
+    <div id='contacter'>
+      <h2>Nous contacter</h2>
+      <h4>02 35 88 01 96</h4>
+      <h4>obs.rouen@club-internet.fr</h4>
+      </div>
+    </footer>
+    </body>
+</html>
